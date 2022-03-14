@@ -9,6 +9,7 @@
   --bg-light-color: #f5f4fa;
   --bg-dark-color: #2f303a;
   --bg-accent-color: #2196f3;
+  --bg-accent-button-color: #188ce8;
 }
 body {
   background-color: var(--bg-main-color);
@@ -108,6 +109,9 @@ body {
   letter-spacing: 0.06em;
   text-align: left;
 }
+.title .part-name {
+  text-transform: uppercase;
+}
 /* button */
 .hero .button {
   background-color: var(--bg-accent-color);
@@ -116,27 +120,25 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--bg-accent-button-color);
+}
 .filter .button {
   background: var(--bg-light-color);
   font-weight: 500;
   line-height: 1.63;
   letter-spacing: 0.03em;
 }
-.button.active {
+.filter .button:hover,
+.filter .button:focus {
   background-color: var(--bg-accent-color);
   color: var(--light-color);
 }
+
 .studio .text,
 .portfolio .text {
   color: var(--secondary-color);
-}
-.text.description {
-  background-color: var(--bg-accent-color);
-  color: var(--light-color);
-  line-height: 1.56;
-}
-.title .part {
-  text-transform: uppercase;
 }
 .address.link {
   color: var(--light-alfa-color);
